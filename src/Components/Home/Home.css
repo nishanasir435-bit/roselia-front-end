@@ -1,0 +1,364 @@
+
+/* ROSELIA - Luxury Perfume Homepage */
+
+.roselia-home {
+  --maroon: #4a2028;
+  --pink: #f8e9ed;
+  --rose: #d38598;
+  --ivory: #fffdf9;
+  --text: #4a2028;
+
+  background: var(--ivory);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  padding: 45px 6%;
+}
+
+.roselia-home * {
+  box-sizing: border-box;
+}
+
+.roselia-home img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #a26374;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.section-heading h1,
+.section-heading h2,
+.promo-text h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color:#841A40;
+}
+
+.section-heading h1 {
+  font-size: clamp(27px, 4vw, 43px);
+  margin: 0 0 12px;
+}
+
+.section-heading h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin: 0 0 12px;
+}
+
+.section-heading > p:last-child {
+  color: #5F0018;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Categories */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.category-card {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  background: var(--pink);
+  cursor: pointer;
+}
+
+.category-card img {
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.06);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px 20px;
+  color: white;
+  background: linear-gradient(
+    transparent 30%,
+    rgba(40, 15, 21, 0.72)
+  );
+}
+
+.category-overlay h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.category-overlay span {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Products */
+
+.products-section {
+  padding: 85px 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  min-width: 0;
+}
+
+.product-image {
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+  background: var(--pink);
+}
+
+.product-image img {
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 7px 10px;
+  color: var(--maroon);
+  background: rgba(255, 253, 249, 0.9);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.product-info {
+  padding: 16px 2px;
+}
+
+.product-info h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.product-info p {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+.add-cart,
+.promo-button {
+  padding: 12px 18px;
+  border: 1px solid var(--maroon);
+  background: var(--maroon);
+  color: white;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s;
+}
+
+.add-cart {
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.add-cart:hover,
+.promo-button:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+}
+
+/* Promotional Banner */
+
+.roselia-promo {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  background: var(--maroon);
+  color: var(--pink);
+  min-height: 330px;
+  overflow: hidden;
+}
+
+.promo-text {
+  padding: 45px;
+}
+
+.promo-text .eyebrow {
+  color: #e7b5c2;
+}
+
+.promo-text h2 {
+  font-size: clamp(27px, 3vw, 40px);
+  margin: 0 0 18px;
+}
+
+.promo-text > p:not(.eyebrow) {
+  color: #f0dce1;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.promo-button {
+  background: transparent;
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.promo-button:hover {
+  color: var(--maroon);
+}
+
+.promo-image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.promo-image img {
+  transition: transform 0.5s ease;
+}
+
+.roselia-promo:hover .promo-image img {
+  transform: scale(1.04);
+}
+
+/* Benefits */
+
+.benefits-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  padding: 55px 0 20px;
+  text-align: center;
+}
+
+.benefit > span {
+  display: inline-block;
+  color: var(--rose);
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.benefit h3 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 9px;
+}
+
+.benefit p {
+  color: #80676c;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .roselia-home {
+    padding: 35px 4%;
+  }
+
+  .category-card {
+    height: 260px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 18px;
+  }
+
+  .product-image {
+    height: 300px;
+  }
+
+  .promo-text {
+    padding: 28px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 560px) {
+  .roselia-home {
+    padding: 30px 16px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .category-card {
+    height: 300px;
+  }
+
+  .products-section {
+    padding: 55px 0;
+  }
+
+  .product-grid {
+    gap: 22px 12px;
+  }
+
+  .product-image {
+    height: 210px;
+  }
+
+  .product-info h3 {
+    font-size: 16px;
+  }
+
+  .product-info p {
+    font-size: 13px;
+  }
+
+  .add-cart {
+    padding: 11px 5px;
+    font-size: 11px;
+  }
+
+  .roselia-promo {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-text {
+    padding: 30px 22px;
+  }
+
+  .promo-image {
+    height: 260px;
+  }
+
+  .benefits-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0 15px;
+  }
+}

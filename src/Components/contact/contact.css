@@ -1,0 +1,292 @@
+.roselia-contact-page {
+  background: #F7E2E7;
+  min-height: 100vh;
+  padding: 65px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #40232f;
+}
+
+.roselia-contact-page * {
+  box-sizing: border-box;
+}
+
+.roselia-contact-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: #faf7f0;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(50, 40, 35, 0.12);
+}
+
+/* Left information section */
+
+.roselia-contact-info {
+  background:#6F2A3E;
+  color: #F7E2E7 ;
+  padding: 55px 42px;
+  position: relative;
+  overflow: hidden;
+}
+
+.roselia-contact-info::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(226, 190, 137, 0.25);
+  border-radius: 50%;
+  right: -110px;
+  bottom: -100px;
+}
+
+.roselia-contact-tag,
+.roselia-contact-small-title {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d9b77e;
+  font-weight: 600;
+  margin: 0 0 22px;
+}
+
+.roselia-contact-info h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0 0 24px;
+}
+
+.roselia-contact-info h1 span {
+  color: #d9b77e;
+  font-style: italic;
+}
+
+.roselia-contact-description {
+  color: #e3d7d9;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 360px;
+  margin-bottom: 38px;
+}
+
+.roselia-contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 25px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.roselia-contact-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border: 1px solid #987c69;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4c58f;
+  font-size: 22px;
+}
+
+.roselia-contact-detail h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+.roselia-contact-detail p {
+  font-size: 12px;
+  color: #d6c5c9;
+  line-height: 1.7;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.roselia-contact-note {
+  margin-top: 45px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: #d9b77e;
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+/* Right form section */
+
+.roselia-contact-form-box {
+  padding: 55px 48px;
+}
+
+.roselia-contact-small-title {
+  margin-bottom: 12px;
+}
+
+.roselia-contact-form-box h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #432633;
+  margin: 0 0 12px;
+}
+
+.roselia-contact-form-text {
+  color: #82737a;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.roselia-contact-input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.roselia-contact-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+  min-width: 0;
+}
+
+.roselia-contact-field label {
+  color: #49313b;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.roselia-contact-field input,
+.roselia-contact-field select,
+.roselia-contact-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid #e4d8d8;
+  border-radius: 8px;
+  outline: none;
+  background: #fffdf9;
+  color: #432633;
+  font-family: inherit;
+  font-size: 12px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.roselia-contact-field input,
+.roselia-contact-field select {
+  height: 47px;
+}
+
+.roselia-contact-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.roselia-contact-field input:focus,
+.roselia-contact-field select:focus,
+.roselia-contact-field textarea:focus {
+  border-color: #987080;
+  box-shadow: 0 0 0 3px rgba(152, 112, 128, 0.12);
+}
+
+.roselia-contact-field input::placeholder,
+.roselia-contact-field textarea::placeholder {
+  color: #a99ba0;
+}
+
+.roselia-contact-submit {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #432633;
+  color: #fff8ef;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.roselia-contact-submit:hover {
+  background: #684052;
+  transform: translateY(-2px);
+}
+
+.roselia-contact-submit span {
+  color: #e2c38e;
+  font-size: 18px;
+}
+
+.roselia-contact-privacy {
+  text-align: center;
+  color: #96868c;
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 22px 0 0;
+}
+
+/* Responsive design */
+
+@media (max-width: 850px) {
+  .roselia-contact-page {
+    padding: 35px 4%;
+  }
+
+  .roselia-contact-container {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+  }
+
+  .roselia-contact-info,
+  .roselia-contact-form-box {
+    padding: 38px 30px;
+  }
+
+  .roselia-contact-info h1 {
+    font-size: 48px;
+  }
+
+  .roselia-contact-note {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .roselia-contact-page {
+    padding: 18px 12px;
+  }
+
+  .roselia-contact-info,
+  .roselia-contact-form-box {
+    padding: 30px 22px;
+  }
+
+  .roselia-contact-input-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .roselia-contact-form-box h2 {
+    font-size: 29px;
+  }
+
+  .roselia-contact-info h1 {
+    font-size: 42px;
+  }
+}

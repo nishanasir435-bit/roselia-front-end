@@ -1,0 +1,14 @@
+.primary-btn{
+    .promo-button {
+  background: transparent;
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.promo-button:hover {
+  color: var(--maroon);
+}
+}
+
+
+
